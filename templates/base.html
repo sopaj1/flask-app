@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="image-container">
+        <img src="..." alt="..." class="cover-image">  <div class="overlay">
+            <div class="header">
+                <div class="site-title">FIONA & JOSH</div>
+                <div class="menu-icon">☰</div>
+            </div>
+
+            {% block content %}{% endblock %}  </div>
+    </div>
+
+</body>
+</html>

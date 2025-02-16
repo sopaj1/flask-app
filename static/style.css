@@ -1,0 +1,118 @@
+body {
+    margin: 0; 
+    font-family: sans-serif;
+}
+
+.image-container { /* Added a class for the image container */
+    position: relative; 
+    width: 100%; 
+    height: 100%; 
+    padding-bottom: 0; 
+}
+
+.image-container-blog {
+    position: relative; 
+    width: 100%; 
+    height: 75vh; 
+    padding-bottom: 0; 
+}
+
+.cover-image { /* Added a class for the image */
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100vh; 
+    object-fit: cover;
+}
+
+.cover-image-blog {
+    position: absolute; /* Changed to absolute */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75vh; /* Viewport height */
+    object-fit: cover;
+    z-index: -1; /* Place behind other content */
+}
+
+.overlay { /* Ensure overlay covers the image */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: yellow;
+}
+
+.overlay-blog {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 40vh; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    color: yellow;
+}
+
+.header { /* Added a class for the header section */
+    padding: 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.site-title {
+    font-size: 24px;
+    color: yellow; /* Make site title red */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Make it look clickable */
+}
+
+.menu-icon { /* Added a class for the menu icon */
+    font-size: 20px; 
+    cursor: pointer;
+    color: yellow;
+}
+
+.content { /* Added a class for the main content area */
+    text-align: center;
+}
+
+.main-heading { /* Added a class for the main heading */
+    font-size: 48px; 
+    font-weight: bold; 
+    margin-bottom: 10px;
+}
+
+
+.footer { /* Added a class for the footer section */
+    padding: 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-end;
+}
+
+.footer-icons { /* Added a class for the footer icons container */
+    display: flex;
+    gap: 10px;
+}
+
+.footer-icon { /* Added a class for each footer icon */
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.blog-entry {
+    width: calc(100% - 20px);
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
