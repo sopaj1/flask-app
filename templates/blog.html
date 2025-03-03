@@ -24,7 +24,9 @@
     {% for post in blog_posts %}
     <div class="blog-entry">
         <h2>{{ post.title }}</h2>
+        {% if post.date %}
         <p>{{ post.date.strftime('%Y-%m-%d') }}</p>
+        {% endif %}
         <p>{{ post.story }}</p>
         {% if post.image %}
         <img src="{{ url_for('static', filename='uploads/' + post.image)}}" alt="Blog Image" width="200">
